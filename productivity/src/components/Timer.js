@@ -72,7 +72,7 @@ function Timer() {
         <div className="card w-full bg-base-300 shadow-xl">
             
                 <div className="card-body">
-                    <h2 className="font-bold text-2xl text-center">Pomodoro Timer</h2>
+                    <h2 className="font-bold text-2xl text-left">Pomodoro Timer</h2>
 
                     <div className="divider" />
 
