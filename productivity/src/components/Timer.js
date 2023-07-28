@@ -68,15 +68,13 @@ function Timer() {
 
 
   return (
-    <div>
         <div className="card w-full bg-base-300 shadow-xl">
-            
                 <div className="card-body">
                     <h2 className="font-bold text-2xl text-left">Pomodoro Timer</h2>
 
                     <div className="divider" />
 
-                    <div className="flex items-stretch">
+                    <div className="flex justify-center">
                         <div className>
                             <h2 className="text-center font-bold pb-2">Hours</h2>
                             <input
@@ -125,7 +123,6 @@ function Timer() {
                     </div>
                 </div>
         </div>
-    </div>
   )
 }
 
