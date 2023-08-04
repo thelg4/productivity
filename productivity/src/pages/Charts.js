@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import CurrentDate from '../components/CurrentDate'
 import ProdRate from '../components/ProdRate'
+import DailyProdChart from '../components/DailyProdChart'
 
 
 function Charts() {
@@ -20,6 +21,9 @@ function Charts() {
 
             <div className="flex-1 flex flex-col justify-center items-center p-6">
                 <ProdRate />
+            </div>
+            <div>
+              <DailyProdChart />
             </div>
 
     </div>
