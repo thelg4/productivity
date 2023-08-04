@@ -1,4 +1,6 @@
 import React from 'react'
+import AddTodo from './AddTodo'
+import EditTodo from './EditTodo'
 
 function Todos() {
   return (
@@ -22,14 +24,20 @@ function Todos() {
                         <tr className="hover">
                             <th>
                                 <div className="flex justify-center">
-                                    <input type="checkbox" checked="checked" className="checkbox" />
+                                    <div className="form-control">
+                                        <label className="label cursor-pointer">
+                                            {/* <input type="checkbox" checked="checked" className="checkbox checkbox-info" /> */}
+                                            <button className="btn btn-info btn-sm font-bold">Complete</button>
+                                        </label>
+                                    </div>
                                 </div>
                             </th>
-                            <td className="font-bold text-center">AZ 900 practice test</td>
+                            <td className="font-bold text-center text-md">AZ 900 practice test</td>
                             <td className="font-bold text-center">07/30/23</td>
                             <td>
                                 <div className="flex justify-center">
-                                    <button className="btn btn-primary btn-sm">Edit</button>
+                                    <EditTodo />
+                                    {/* <button className="btn btn-primary btn-sm">Edit</button> */}
                                 </div>
                             </td>
                         </tr>
@@ -40,7 +48,7 @@ function Todos() {
             <div className="divider" />
 
             <div className="card-actions justify-center">
-                <button className="btn btn-info font-bold w-48">Add Todo</button>
+                <AddTodo />
                 {/* <button className="btn btn-primary">Buy Now</button> */}
             </div>
         </div>

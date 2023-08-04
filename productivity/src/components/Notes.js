@@ -1,4 +1,5 @@
 import React from 'react'
+import AddNote from './AddNote'
 
 function Notes() {
   return (
@@ -12,7 +13,8 @@ function Notes() {
 
             <div className="divider" />
             <div className="card-actions justify-center">
-                <button className="btn btn-info w-48">Add Note</button>
+                {/* <button className="btn btn-info w-48">Add Note</button> */}
+                <AddNote />
             </div>
         </div>
     </div>
